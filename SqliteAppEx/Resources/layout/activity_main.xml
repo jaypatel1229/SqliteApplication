@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#189AB4"
+    
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#145DA0"
+        app:logo="@drawable/rivetlogo"
+        app:title="Login"
+        app:titleMarginStart="22dp"
+        app:titleTextColor="@android:color/black"
+        app:subtitle="Hear we go"
+        app:subtitleTextColor="@android:color/black"
+        android:id="@+id/toolbar1" 
+        />  
+    <EditText
+        
+        android:layout_marginTop="20dp"
+        android:id="@+id/edtNumber"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        android:hint="Enter Your Enrollment No"
+        android:backgroundTint="#DB1F48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        
+        android:id="@+id/edtName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter Your  Name"
+        android:backgroundTint="#DB1F48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     />
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter Your Email"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="#DB1F48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     />
+    <EditText
+        android:id="@+id/edtPwd"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="textPassword"
+        android:hint="Enter Your password"
+        android:backgroundTint="#DB1F48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     />
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+         <Button       
+            android:id="@+id/insertData"
+            android:text="Insert"
+            android:backgroundTint="#DB1F48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+        
+         />
+        <Button       
+            android:id="@+id/updateData"
+            android:text="Update"
+            android:backgroundTint="#DB1F48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+        android:id="@+id/deleteData"
+        android:text="Delete"
+        android:backgroundTint="#DB1F48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+       
+     />
+    <Button
+        android:id="@+id/showData"
+        android:text="Show"
+        android:backgroundTint="#DB1F48"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"      
+     />
+    </LinearLayout>
+    
+
+    
+    <ListView
+        android:layout_marginTop="40dp"
+        android:id="@+id/list1"
+        android:minWidth="30px"
+        android:minHeight="30px"
+        android:background="@android:color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
